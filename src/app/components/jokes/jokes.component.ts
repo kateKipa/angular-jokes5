@@ -18,13 +18,13 @@ export class JokesComponent implements OnInit {
   ngOnInit(): void {
     this.jokesService.getARandomJoke().subscribe((data : RandomJoke) => {
       console.log(data)
-      this.joke = data.joke
+      this.joke = data.value
     })
   }
 
   refreshJoke() {
     this.jokesService.getARandomJoke().subscribe((data) => {
-      this.joke = data.joke
+      this.joke = data.value
     })
 
   }

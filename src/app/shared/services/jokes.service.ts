@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable, inject } from '@angular/core';
 import { RandomJoke } from '../interfaces/jokes';
 
-const JOKES_URL = 'https://icanhazdadjoke.com/';
+const JOKES_URL = 'https://api.chucknorris.io/jokes/random';
 
 @Injectable({
   providedIn: 'root'

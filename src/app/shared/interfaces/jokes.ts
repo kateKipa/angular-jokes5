@@ -1,3 +1,3 @@
 export interface RandomJoke {
-    joke: string
+    value: string
 }
